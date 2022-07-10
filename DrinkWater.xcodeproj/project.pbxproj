@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1CCBA2287AC17800513C1D /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CCBA0287AC17800513C1D /* AlertListCell.swift */; };
+		BF1CCBA3287AC17800513C1D /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCBA1287AC17800513C1D /* AlertListCell.xib */; };
 		BF1CD9F1287ABCE9006F1E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CD9F0287ABCE9006F1E3C /* AppDelegate.swift */; };
 		BF1CD9F3287ABCE9006F1E3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CD9F2287ABCE9006F1E3C /* SceneDelegate.swift */; };
 		BF1CD9F5287ABCE9006F1E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CD9F4287ABCE9006F1E3C /* ViewController.swift */; };
 		BF1CD9F8287ABCE9006F1E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1CD9F6287ABCE9006F1E3C /* Main.storyboard */; };
 		BF1CD9FA287ABCEC006F1E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1CD9F9287ABCEC006F1E3C /* Assets.xcassets */; };
 		BF1CD9FD287ABCEC006F1E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1CD9FB287ABCEC006F1E3C /* LaunchScreen.storyboard */; };
+		BF1CDA05287ABF3F006F1E3C /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CDA04287ABF3F006F1E3C /* AlertListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF1CCBA0287AC17800513C1D /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
+		BF1CCBA1287AC17800513C1D /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
 		BF1CD9ED287ABCE9006F1E3C /* DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1CD9F0287ABCE9006F1E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF1CD9F2287ABCE9006F1E3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		BF1CD9F9287ABCEC006F1E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF1CD9FC287ABCEC006F1E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF1CD9FE287ABCEC006F1E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1CDA04287ABF3F006F1E3C /* AlertListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				BF1CD9F9287ABCEC006F1E3C /* Assets.xcassets */,
 				BF1CD9FB287ABCEC006F1E3C /* LaunchScreen.storyboard */,
 				BF1CD9FE287ABCEC006F1E3C /* Info.plist */,
+				BF1CDA04287ABF3F006F1E3C /* AlertListViewController.swift */,
+				BF1CCBA0287AC17800513C1D /* AlertListCell.swift */,
+				BF1CCBA1287AC17800513C1D /* AlertListCell.xib */,
 			);
 			path = DrinkWater;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 			files = (
 				BF1CD9FD287ABCEC006F1E3C /* LaunchScreen.storyboard in Resources */,
 				BF1CD9FA287ABCEC006F1E3C /* Assets.xcassets in Resources */,
+				BF1CCBA3287AC17800513C1D /* AlertListCell.xib in Resources */,
 				BF1CD9F8287ABCE9006F1E3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +151,8 @@
 				BF1CD9F5287ABCE9006F1E3C /* ViewController.swift in Sources */,
 				BF1CD9F1287ABCE9006F1E3C /* AppDelegate.swift in Sources */,
 				BF1CD9F3287ABCE9006F1E3C /* SceneDelegate.swift in Sources */,
+				BF1CDA05287ABF3F006F1E3C /* AlertListViewController.swift in Sources */,
+				BF1CCBA2287AC17800513C1D /* AlertListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
