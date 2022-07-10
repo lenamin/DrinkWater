@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF1CCBA2287AC17800513C1D /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CCBA0287AC17800513C1D /* AlertListCell.swift */; };
 		BF1CCBA3287AC17800513C1D /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1CCBA1287AC17800513C1D /* AlertListCell.xib */; };
+		BF1CCBA5287AC36A00513C1D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CCBA4287AC36A00513C1D /* Alert.swift */; };
 		BF1CD9F1287ABCE9006F1E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CD9F0287ABCE9006F1E3C /* AppDelegate.swift */; };
 		BF1CD9F3287ABCE9006F1E3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CD9F2287ABCE9006F1E3C /* SceneDelegate.swift */; };
 		BF1CD9F5287ABCE9006F1E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CD9F4287ABCE9006F1E3C /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		BF1CCBA0287AC17800513C1D /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
 		BF1CCBA1287AC17800513C1D /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
+		BF1CCBA4287AC36A00513C1D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BF1CD9ED287ABCE9006F1E3C /* DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1CD9F0287ABCE9006F1E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF1CD9F2287ABCE9006F1E3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				BF1CDA04287ABF3F006F1E3C /* AlertListViewController.swift */,
 				BF1CCBA0287AC17800513C1D /* AlertListCell.swift */,
 				BF1CCBA1287AC17800513C1D /* AlertListCell.xib */,
+				BF1CCBA4287AC36A00513C1D /* Alert.swift */,
 			);
 			path = DrinkWater;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1CCBA5287AC36A00513C1D /* Alert.swift in Sources */,
 				BF1CD9F5287ABCE9006F1E3C /* ViewController.swift in Sources */,
 				BF1CD9F1287ABCE9006F1E3C /* AppDelegate.swift in Sources */,
 				BF1CD9F3287ABCE9006F1E3C /* SceneDelegate.swift in Sources */,
