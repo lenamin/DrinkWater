@@ -50,4 +50,19 @@ extension AlertListViewController {
         return 80
     }
     
+    /// tableViewCell 삭제가 가능하다
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            // MARK: notification 삭제 구현할 것
+            return
+            
+        default:
+            break
+        }
+    }
 }
