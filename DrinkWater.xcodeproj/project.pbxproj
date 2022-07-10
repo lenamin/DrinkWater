@@ -67,14 +67,14 @@
 				BF1CD9F0287ABCE9006F1E3C /* AppDelegate.swift */,
 				BF1CD9F2287ABCE9006F1E3C /* SceneDelegate.swift */,
 				BF1CD9F4287ABCE9006F1E3C /* ViewController.swift */,
-				BF1CD9F6287ABCE9006F1E3C /* Main.storyboard */,
-				BF1CD9F9287ABCEC006F1E3C /* Assets.xcassets */,
-				BF1CD9FB287ABCEC006F1E3C /* LaunchScreen.storyboard */,
-				BF1CD9FE287ABCEC006F1E3C /* Info.plist */,
 				BF1CDA04287ABF3F006F1E3C /* AlertListViewController.swift */,
 				BF1CCBA0287AC17800513C1D /* AlertListCell.swift */,
-				BF1CCBA1287AC17800513C1D /* AlertListCell.xib */,
 				BF1CCBA4287AC36A00513C1D /* Alert.swift */,
+				BF1CD9F6287ABCE9006F1E3C /* Main.storyboard */,
+				BF1CCBA1287AC17800513C1D /* AlertListCell.xib */,
+				BF1CD9FB287ABCEC006F1E3C /* LaunchScreen.storyboard */,
+				BF1CD9F9287ABCEC006F1E3C /* Assets.xcassets */,
+				BF1CD9FE287ABCEC006F1E3C /* Info.plist */,
 			);
 			path = DrinkWater;
 			sourceTree = "<group>";
