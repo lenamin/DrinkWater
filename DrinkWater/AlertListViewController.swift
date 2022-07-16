@@ -20,7 +20,7 @@ class AlertListViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        alerts = alertList() 
+        alerts = alertList()
     }
     
     @IBAction func addAlertButtonAction(_ sender: UIBarButtonItem) {
@@ -29,7 +29,16 @@ class AlertListViewController: UITableViewController {
         addAlertViewController.pickedDate = {[weak self] date in
             guard let self = self else { return }
             
+            var alertList = self.alertList() // userDefaults에서 가져온 list이다
+            
             let newAlert = Alert(date: date, isOn: true)
+            
+            alertList.append(newAlert)
+            alertList.sort { $0.date < $1.date } // 시간 순서대로 보이도록 정렬해준다
+            
+            self.alerts = alertList
+            
+            self.tableView.reloadData()
         }
         
         self.present(addAlertViewController, animated: true, completion: nil)
