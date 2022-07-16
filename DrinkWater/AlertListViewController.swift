@@ -9,7 +9,7 @@ import UIKit
  
 class AlertListViewController: UITableViewController {
     
-    var alertList: [Alert] = []
+    var alerts: [Alert] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +17,40 @@ class AlertListViewController: UITableViewController {
         let nibName = UINib(nibName: "AlertListCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "AlertListCell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        alerts = alertList() 
+    }
+    
     @IBAction func addAlertButtonAction(_ sender: UIBarButtonItem) {
+        guard let addAlertViewController = storyboard?.instantiateViewController(withIdentifier: "AddAlertViewController") as? AddAlertViewController else { return }
+        
+        addAlertViewController.pickedDate = {[weak self] date in
+            guard let self = self else { return }
+            
+            let newAlert = Alert(date: date, isOn: true)
+        }
+        
+        self.present(addAlertViewController, animated: true, completion: nil)
+        
+        // 생성된 알람을 리스트에 표현되도록 클로저를 구현하기
+    }
+    
+    func alertList() -> [Alert] {
+        // key가 alerts인 값을 내뱉어줄 것
+        guard let data = UserDefaults.standard.value(forKey: "alerts") as? Data,
+              // 우리가 원하는 값으로 디코딩해주기 위한 코드
+                let alerts = try? PropertyListDecoder().decode([Alert].self, from: data) else { return [] }
+        // 내부 저장소인 userdefaults는 임의로 만든 구조체를 이해하지 못하기 때문에 이해할 수 있게 디코딩 해주는 과정임
+        return alerts
     }
     
 }
 
 extension AlertListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return alertList.count
+        return alerts.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -39,9 +65,9 @@ extension AlertListViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AlertListCell", for: indexPath) as? AlertListCell else { return UITableViewCell() }
         
-        cell.alertSwitch.isOn = alertList[indexPath.row].isOn
-        cell.timeLabel.text = alertList[indexPath.row].time
-        cell.meridiemLabel.text = alertList[indexPath.row].meridiem
+        cell.alertSwitch.isOn = alerts[indexPath.row].isOn
+        cell.timeLabel.text = alerts[indexPath.row].time
+        cell.meridiemLabel.text = alerts[indexPath.row].meridiem
         
         return cell
     }
